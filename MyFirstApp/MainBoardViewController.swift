@@ -71,7 +71,6 @@ class MainBoardViewController: UIViewController {
         if remainAttempt == 11 {
             setUp()
         }
-        
     }
     
     func updateGuessingNumber() {
@@ -84,7 +83,6 @@ class MainBoardViewController: UIViewController {
             score = score + 10
             scoreLabel.text  = "Scores:" + String(score)
         }
-        
     }
     
     func remAttempt() {
@@ -111,7 +109,6 @@ class MainBoardViewController: UIViewController {
         //display th ealert on the screen
         present(alert, animated: true)
     }
-    
 }
 
 
