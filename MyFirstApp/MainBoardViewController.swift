@@ -90,12 +90,14 @@ class MainBoardViewController: UIViewController {
         remainingAttempt.text = "Раунд:" + String(remainAttempt)
         if remainAttempt == 11 {
             setUp()
+            showResults()
         }
     }
     
     func showResults() {
         //creat alert
-        let alert: UIAlertController = UIAlertController (title: "Results", message: "You earned\(score)scores" , preferredStyle: .alert)
+       let alert: UIAlertController = UIAlertController (title: "Results", message: "You earned\(score)scores" , preferredStyle: .alert)
+        
         //creat a button for alert
         let okButton: UIAlertAction = UIAlertAction(title: "Start again", style: .default, handler: { _ in
             // creat action when button is pressed
